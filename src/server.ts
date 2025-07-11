@@ -35,7 +35,7 @@ app.get("/status/:key", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("✅ Resilient Email Service is running. Use POST /send-email");
+  res.send("✅ Resilient Email Service is running.");
 });
 
 app.listen(port, () => {
