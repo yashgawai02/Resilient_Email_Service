@@ -34,6 +34,10 @@ app.get("/status/:key", (req, res) => {
   res.json({ status });
 });
 
+app.get("/", (req, res) => {
+  res.send("✅ Resilient Email Service is running. Use POST /send-email");
+});
+
 app.listen(port, () => {
   console.log(`📡 Email API listening on port ${port}`);
 });
